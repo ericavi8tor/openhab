@@ -1,7 +1,7 @@
 #Base configuration nicked from github.com/limetech/dockerapp-plex
 
 FROM phusion/baseimage:0.9.16
-MAINTAINER Christian Waite
+MAINTAINER ericavi8tor
 
 # Set correct environment variables
 ENV DEBIAN_FRONTEND="noninteractive" HOME="/root" LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8"
