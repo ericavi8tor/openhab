@@ -14,7 +14,6 @@ cp=$(find $eclipsehome -name "org.eclipse.equinox.launcher_*.jar" | sort | tail 
 
 echo Launching the openHAB runtime...
 java \
-  -Dgnu.io.rxtx.SerialPorts=/dev/USBrfxcom:/dev/USBzwave \
 	-Dosgi.clean=true \
 	-Declipse.ignoreApp=true \
 	-Dosgi.noShutdown=true  \
