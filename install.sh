@@ -25,30 +25,30 @@ apt-get install -y openjdk-7-jdk
 apt-get install -qy wget unzip
 mkdir /downloads
 cd /downloads
-wget -nv https://bintray.com/artifact/download/openhab/bin/distribution-1.8.0-runtime.zip
-wget -nv https://bintray.com/artifact/download/openhab/bin/distribution-1.8.0-addons.zip
+wget -nv https://bintray.com/artifact/download/openhab/bin/distribution-1.8.1-runtime.zip
+wget -nv https://bintray.com/artifact/download/openhab/bin/distribution-1.8.1-addons.zip
 wget -nv wget -nv https://github.com/cdjackson/HABmin/blob/master/addons/org.openhab.io.habmin-1.7.0-SNAPSHOT.jar?raw=true
 wget -nv https://github.com/cdjackson/HABmin/archive/master.zip
 wget -nv https://github.com/cdjackson/HABmin2/releases/download/0.0.15/HABmin2-0.0.15-release.zip
 
 # Main runtime
-unzip -q distribution-1.8.0-runtime.zip -d /opt/openhab
+unzip -q distribution-1.8.1-runtime.zip -d /opt/openhab
 
 # Addons
-unzip -q distribution-1.8.0-addons.zip -d /downloads/addons/
-cp -rp addons/org.openhab.binding.zwave-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.action.astro-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.astro-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.exec-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.http-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.hue-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.ntp-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.systeminfo-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.tcp-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.binding.weather-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.io.myopenhab-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.persistence.exec-1.8.0.jar /opt/openhab/addons/
-cp -rp addons/org.openhab.persistence.rrd4j-1.8.0.jar /opt/openhab/addons/
+unzip -q distribution-1.8.1-addons.zip -d /downloads/addons/
+cp -rp addons/org.openhab.binding.zwave-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.action.astro-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.astro-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.exec-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.http-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.hue-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.ntp-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.systeminfo-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.tcp-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.binding.weather-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.io.myopenhab-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.persistence.exec-1.8.1.jar /opt/openhab/addons/
+cp -rp addons/org.openhab.persistence.rrd4j-1.8.1.jar /opt/openhab/addons/
 
 # HabMin1.7 jar
 cp -rp org.openhab.io.habmin-1.7.0-SNAPSHOT.jar?raw=true /opt/openhab/addons/org.openhab.io.habmin-1.7.0-SNAPSHOT.jar
