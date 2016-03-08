@@ -18,8 +18,9 @@ echo 'server 0.uk.pool.ntp.org' > /etc/ntp.conf
 echo 'Europe/London' > /etc/timezone
 
 # Install Java 7
-apt-get purge -qy openjdk*
-apt-get install -y openjdk-7-jdk
+#apt-get purge -qy openjdk*
+#apt-get install -y openjdk-7-jdk
+apt-get install -y oracle-java7-jdk
 
 # Downloads Openhab and extras
 apt-get install -qy wget unzip
