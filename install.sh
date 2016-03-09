@@ -17,13 +17,10 @@ apt-get install -y ntp
 echo 'server 0.uk.pool.ntp.org' > /etc/ntp.conf
 echo 'Europe/London' > /etc/timezone
 
-# Install Java 7
-apt-get purge -qy openjdk*
-add-apt-repository ppa:webupd8team/java
+# Install Oracle Java 8
+add-apt-repository -y ppa:webupd8team/java
 apt-get update
-apt-get install oracle-java7-installer
-#apt-get install -y openjdk-7-jdk
-#apt-get install -y oracle-java7-jdk
+apt-get install -y oracle-java8-installer
 
 # Downloads Openhab and extras
 apt-get install -qy wget unzip
