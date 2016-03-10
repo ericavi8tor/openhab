@@ -17,6 +17,22 @@ apt-get install -y ntp
 echo 'server 0.uk.pool.ntp.org' > /etc/ntp.conf
 echo 'Europe/London' > /etc/timezone
 
+#########################################
+##    REPOSITORIES AND DEPENDENCIES    ##
+#########################################
+
+# Repositories
+add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe multiverse"
+add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates universe multiverse"
+add-apt-repository ppa:mc3man/trusty-media
+
+# Use mirrors
+sed -i -e "s#http://[^\s]*archive.ubuntu[^\s]* #mirror://mirrors.ubuntu.com/mirrors.txt #g" /etc/apt/sources.list
+
+# Install Python
+apt-get update -qq
+apt-get install -qy python
+
 # Install Oracle Java 8
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 add-apt-repository -y ppa:webupd8team/java
