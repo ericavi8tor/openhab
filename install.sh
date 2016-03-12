@@ -15,7 +15,7 @@ apt-get -q update
 # Set Timezone
 apt-get install -y ntp
 echo 'server 0.uk.pool.ntp.org' > /etc/ntp.conf
-echo 'Europe/London' > /etc/timezone
+echo 'America/New_York' > /etc/timezone
 
 #########################################
 ##    REPOSITORIES AND DEPENDENCIES    ##
